@@ -13,7 +13,7 @@ class Space(dict):
  def add(self,**kwargs):
   new_id = max ( [0] + list(self.keys()) ) + 1
   self [new_id] = task.Task(new_id,**kwargs)
-
+  return new_id
 
  # return the subset of tasks that have specified parameters
  # boolean AND in effect here
